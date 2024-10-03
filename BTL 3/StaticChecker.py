@@ -393,7 +393,7 @@ class StaticChecker(Visitor):   # every testcases will have >=1 error hence must
         env = [[]] + o                # ini another env
         inherit_list = []               # store list of inherit
 
-        if ctx == self.Current_Function:        # if correct current function
+        if self.Current_Function and ctx == self.Current_Function:        # if correct current function
             # check parameters, then add
             for x in ctx.params:
                 env = self.visit(x, env)
