@@ -1,7 +1,33 @@
-# fb-crawler
+# Welcome
 ### Install Nodejs
 
-aAll Assignment in PPL are done by K22 studying first time with no copy code, rarely do reference, mostly self-done, and not study Vo Tien.
+
+
+This is the repo of all Principle of Programming Language assignments that I have done in Semester 233 (summer)
+All Assignment in PPL are done by K22 studying first time with no copy code, rarely do reference, mostly self-done, and not study Vo Tien
+
+
+### How to run
+1. Set environment variable ANTLR_JAR to the file antlr-4.9.2-complete.jar in your computer
+Change current directory to initial/src where there is file run.py
+Type: python run.py gen 
+Then type: python run.py test LexerSuite
+Then type: python run.py test ParserSuite
+Then type: python run.py test ASTGenSuite
+Then type: python run.py test CheckerSuite
+Then type: python run.py test CodeGenSuite
+
+
+
+
+### Trivia
+This is one of the rare semesters that PPL is opened in summer. The earlier is semester 213, which is 3 years before the current.
+
+This is among the subjects that have the worst scoring system. To simplify, you must answer correctly 20% of the questions just to get 0 score. After that, the more correct answer, the more score you can get. This means that if you have a bad score like only 30% of the question, you should only get like 1 point.
+I see some of
+
+The teacher that teaches subject does not actually teach basic knowledge in class; instead you must self-study at home, complete codes at home (like lab), and in-class you have to do quizzes.
+
 
 
 1. Check nodejs version
