@@ -1,0 +1,4 @@
+Illegal array literal: ArrayLit([
+		IntegerLit(1),
+		FloatLit(2.0),
+		IntegerLit(3)])

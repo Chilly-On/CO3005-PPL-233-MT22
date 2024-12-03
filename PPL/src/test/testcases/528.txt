@@ -1,0 +1,9 @@
+
+                x: array [2] of boolean = {false, false};
+                y: array [2, 2] of boolean = {x, {false, true}};
+                main: function void()
+                {
+                     x[1] = true;
+                     printBoolean(x[1]);
+                     printBoolean(y[1, 0]);
+                }

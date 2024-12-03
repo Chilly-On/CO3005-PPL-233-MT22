@@ -1,0 +1,5 @@
+Program([
+	FuncDecl(main, VoidType, [], None, BlockStmt([
+		VarDecl(y, BooleanType, BinExpr(||, BinExpr(&&, BooleanLit(True), BooleanLit(False)), BooleanLit(False))),
+		CallStmt(printBoolean, Id(y))]))
+])

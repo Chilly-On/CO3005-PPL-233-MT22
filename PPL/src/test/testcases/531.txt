@@ -1,0 +1,11 @@
+
+                f1: function void(i: integer, f: float, b: boolean, str: string){
+                    printInteger(i);
+                    printFloat(f);
+                    printBoolean(b);
+                    printString(str);
+                }
+                main: function void()
+                {
+                     f1(3, 0.0, false, "Successfull");
+                }

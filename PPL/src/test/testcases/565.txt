@@ -1,0 +1,15 @@
+
+        a: array [10] of integer = {3, 9, 1, 0, 6, 4, 5, 8, 7, 2};
+        main: function void() {
+            i: integer;
+            for(i = 0, i < 5, 1)
+            {
+                temp: integer = a[i];
+                a[i] = a[9 - i];
+                a[9 - i] = temp;
+            }
+            for(i = 0, i < 10, 1)
+            {
+                printInteger(a[i]);
+            }
+        }

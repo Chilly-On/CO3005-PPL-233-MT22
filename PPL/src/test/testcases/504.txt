@@ -1,0 +1,7 @@
+
+        main: function void()
+        {
+            x: float = 3.0; // Input 3.0
+            y: float = 0.5;       // Input 0.5
+            printFloat(y);
+        }

@@ -1,0 +1,6 @@
+Program([
+	FuncDecl(main, IntegerType, [], None, BlockStmt([
+		VarDecl(str, StringType, StringLit(   d&OaN   V$aN  hA*U    )),
+		VarDecl(outstr, StringType, ArrayCell(char, [BinExpr(+, FuncCall(strlen, [Id(str)]), IntegerLit(1))])),
+		CallStmt(proper, Id(str), Id(outstr))]))
+])

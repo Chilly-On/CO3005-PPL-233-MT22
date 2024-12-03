@@ -1,0 +1,12 @@
+main: function void(){
+                        while (true){
+                            if (true)
+                                break;
+                            while (false)
+                                if (false)
+                                    break;
+                            continue;
+                        }
+                        return "should raise this";
+                    }
+                    

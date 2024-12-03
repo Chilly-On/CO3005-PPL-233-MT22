@@ -1,0 +1,22 @@
+
+        a: array [10] of integer = {3, 9, 1, 0, 6, 4, 5, 8, 7, 2};
+        max: function integer(a: integer, b: integer)
+        {
+            if (a > b)
+            {
+                return a;
+            }
+            return b;
+        }
+        maxEle: function integer(arr: array [10] of integer, n: integer)
+        {
+            if (n == 1)
+            {
+                return arr[0];
+            }
+            k: integer = max(arr[n - 1], maxEle(arr, n - 1));
+            return k;
+        }
+        main: function void() {
+            printInteger(maxEle(a, 10));
+        }

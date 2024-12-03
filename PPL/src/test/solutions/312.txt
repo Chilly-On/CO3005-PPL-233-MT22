@@ -1,0 +1,6 @@
+Program([
+	FuncDecl(main, IntegerType, [], None, BlockStmt([
+		VarDecl(i, IntegerType, IntegerLit(8)),
+		VarDecl(j, IntegerType, IntegerLit(6)),
+		CallStmt(print, FuncCall(calc, [Id(str)]))]))
+])

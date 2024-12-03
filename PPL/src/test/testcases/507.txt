@@ -1,0 +1,7 @@
+
+        main: function void()
+        {
+            x: integer = 3;
+            y: integer = 4;
+            printInteger(x + y);
+        }

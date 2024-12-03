@@ -1,0 +1,9 @@
+
+                main: function void()
+                {
+                    x: string = "PP";
+                    x = x :: "L";
+                    printString(x);
+                    y: boolean = true && false || true;
+                    printBoolean(y);
+                }

@@ -1,0 +1,7 @@
+    // array missed ]
+ main : function integer ()
+{
+	str, outstr : string = "   d&OaN   V$aN  hA*U    ", char[strlen(str) + 1;
+	proper(str, outstr);
+	/* TODO*/
+}

@@ -1,0 +1,9 @@
+Program([
+	FuncDecl(f1, VoidType, [Param(a, StringType)], None, BlockStmt([
+		CallStmt(printString, StringLit(f1))]))
+	FuncDecl(f2, VoidType, [], f1, BlockStmt([
+		CallStmt(preventDefault, ),
+		CallStmt(printString, StringLit(f2))]))
+	FuncDecl(main, VoidType, [], None, BlockStmt([
+		CallStmt(f2, )]))
+])

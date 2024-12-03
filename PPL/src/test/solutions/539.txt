@@ -1,0 +1,16 @@
+Program([
+	FuncDecl(f1, VoidType, [InheritParam(a, StringType)], None, BlockStmt([
+		CallStmt(printString, Id(a))]))
+	FuncDecl(f2, VoidType, [InheritParam(b, StringType)], f1, BlockStmt([
+		CallStmt(super, StringLit(f1)),
+		CallStmt(printString, Id(b))]))
+	FuncDecl(f3, VoidType, [], f2, BlockStmt([
+		CallStmt(super, StringLit(f2)),
+		AssignStmt(Id(a), StringLit(f1)),
+		AssignStmt(Id(b), StringLit(f2)),
+		CallStmt(printString, Id(a)),
+		CallStmt(printString, Id(b)),
+		CallStmt(printString, StringLit(f3))]))
+	FuncDecl(main, VoidType, [], None, BlockStmt([
+		CallStmt(f3, )]))
+])

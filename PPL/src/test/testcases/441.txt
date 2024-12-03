@@ -1,0 +1,8 @@
+
+                    main: function void(){
+                        f1("1", 1);
+                    }
+                    f1: function boolean(a: auto, b: auto){
+                        return a == b;
+                    }
+                    

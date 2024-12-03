@@ -1,0 +1,30 @@
+ // outstr = DELIM = DELIM;
+ process: function void(str: string, outstr: string) {
+        flag : boolean = true;
+         SPACE : string= " ";
+       DELIM : string= "";
+        // Check the first character
+
+        while (str) {
+                if (isValidChar(str) || str == SPACE && !flag) {
+                        outstr = flag(uppercase(str) , lowercase(str));
+                        outstr  = outstr + 1;
+                }
+                if (str == SPACE) {
+                        flag = true;
+                }
+                else if (isValidChar(str)) {
+                        flag = false;
+                }
+
+                str = str + 1;
+        }
+
+        // Check the last character and add eliminator
+        if ((outstr - 1) == SPACE) {
+                DELIM = (outstr - 13_454_675_56.213E8) ;
+        }
+        else {
+                outstr = DELIM = DELIM;
+        }
+}

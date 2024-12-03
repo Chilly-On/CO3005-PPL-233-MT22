@@ -1,0 +1,7 @@
+
+                main: function void()
+                {
+                    x: array [3] of integer = {1, 2, 3};
+                    x[2] = 7;
+                    printInteger(x[2]);
+                }

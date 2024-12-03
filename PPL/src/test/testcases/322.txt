@@ -1,0 +1,8 @@
+    // Dots in ID
+    cutString : function void(s : string, index: integer) {
+    // TO DO
+    if (index < ssize()) {
+        s = ssubstr(index, ssize() - index);
+        print(s);
+    }
+}

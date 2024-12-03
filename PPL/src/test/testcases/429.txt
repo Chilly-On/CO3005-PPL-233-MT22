@@ -1,0 +1,13 @@
+
+        main: function void(){
+            while (true){
+                if (true)
+                    break;			// 1
+                while (false)
+                    if (false)
+                        break;		// 2
+                continue;			// 3
+                }
+            continue;				// 4
+        }
+        

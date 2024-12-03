@@ -1,0 +1,8 @@
+
+                main: function void()
+                {
+                    x: auto = 5;
+                    printInteger(x);
+                    y: auto = 6.8;
+                    printFloat(y);
+                }

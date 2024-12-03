@@ -1,0 +1,50 @@
+
+        swapNumber: function void(out a: integer, out b: integer)
+        {
+            temp: integer = a;
+            a = b;
+            b = temp;
+        }
+        sort: function void (arr: array[20] of integer, low: integer, high: integer)
+        {
+            if (low < high)
+            {
+                idx: integer = partition(arr, low, high);
+                sort(arr, low, idx - 1);
+                sort(arr, idx + 1, high);
+            }
+        }
+        partition: function integer(arr: array[20] of integer, low: integer, high: integer)
+        {
+            pivot, left, right: integer = arr[high], low, high - 1;
+            while (true)
+            {
+                while ((left <= right) && (arr[left] < pivot))
+                {
+                    left = left + 1;
+                }
+                while ((right >= left) && (arr[right] > pivot))
+                {
+                    right = right - 1;
+                }
+                if (left >= right)
+                {
+                    break;
+                }
+                swapNumber(arr[left], arr[right]);
+                left = left + 1;
+                right = right - 1;
+            }
+            swapNumber(arr[left], arr[high]);
+            return left;
+        }
+        main: function void()
+        {
+            arr: array[20] of integer = {-26, 15, 8, -3, 0, 4, -10, 21, 30, 10, 49, -51, 59, 67, -70, 71, 33, -89, 27, 100};
+            sort(arr, 0, 19);
+            i: integer;
+            for (i = 0, i < 20, 1)
+            {
+                printInteger(arr[i]);
+            }
+        }

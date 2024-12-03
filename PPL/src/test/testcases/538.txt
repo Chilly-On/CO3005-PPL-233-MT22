@@ -1,0 +1,13 @@
+
+        f1: function void(inherit a: string){
+            printString(a);
+        }
+        f2: function void() inherit f1{
+            super("f1");
+            a = "f2";
+            printString(a);
+        }
+        main: function void()
+        {
+             f2();
+        }

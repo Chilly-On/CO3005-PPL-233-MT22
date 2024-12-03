@@ -1,0 +1,23 @@
+
+        reverse: function integer (n: integer)
+        {
+            result, temp: integer = 0, n;
+            if (temp < 0)
+            {
+                n = -n;
+            }
+            while (n > 0)
+            {
+                result = 10 * result + (n % 10);
+                n = n / 10;
+            }
+            if (temp < 0)
+            {
+                return -result;
+            }
+            return result;
+        }
+        main: function void() {
+            n: integer = readInteger(); // Input -28
+            printInteger(reverse(n));
+        }

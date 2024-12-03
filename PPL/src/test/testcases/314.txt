@@ -1,0 +1,11 @@
+    // EXP w/o num
+ sp1 : boolean = false;
+ func:function integer() {
+    // EXP w/o num
+print(strlen(str));// REMOVE
+
+        // if need, use proper process header
+        // CAL FOR SUM (old)
+                /**/
+    a = a * 2.34e-3;
+}

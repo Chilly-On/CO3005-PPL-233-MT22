@@ -1,0 +1,15 @@
+
+        bar: function void (a: integer, out b: integer, c: integer)
+        {
+            a = a + 10;
+            b = a + c + 4;
+            printInteger(a);
+            printInteger(b);
+            printInteger(c);
+        }
+        main: function void() {
+            j, k: integer = 10, 15;
+            bar(j, j, j + k);
+            printInteger(j);
+            printInteger(k);
+        }

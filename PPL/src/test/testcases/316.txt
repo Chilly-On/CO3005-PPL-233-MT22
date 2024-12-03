@@ -1,0 +1,6 @@
+    // multi declare on prototype
+proper: function void(str: string) {			// "   d&OaN   V$aN  hA*U    "
+	// REWORK use pointer
+	process(str,outstr);
+	return;
+}

@@ -1,0 +1,5 @@
+Program([
+	FuncDecl(main, IntegerType, [InheritOutParam(str, StringType)], None, BlockStmt([
+		VarDecl(s, StringType, StringLit(Truong Dai Hoc)),
+		CallStmt(cutString, Id(s), IntegerLit(4))]))
+])

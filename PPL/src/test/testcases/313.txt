@@ -1,0 +1,13 @@
+    // float have _
+ sp1 : boolean = false;
+ func:function integer() {
+        for (i = strlen(str) - 1, i >= 0, i-1) {
+                if (str[i] == "1") {
+                        a = 1;
+                        for (j = 0, j < (strlen(str) - i-1), j+1)
+                                a = a * 2.34E8;
+                        sum = sum + a;
+                }
+        }
+}
+        

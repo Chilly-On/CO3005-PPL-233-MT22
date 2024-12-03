@@ -1,0 +1,4 @@
+Program([
+	FuncDecl(main, VoidType, [], None, BlockStmt([
+		VarDecl(newConversation, IntegerType, FloatLit(3.0))]))
+])

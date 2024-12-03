@@ -1,0 +1,13 @@
+
+            main : function void() {}
+            f0 : function auto(x: auto, y: auto, z: auto, t: auto, a: auto, b: auto, c: auto, d: auto){
+                d2: integer = a;
+                d3: auto = a;
+                for (x = 3, y == z, t){}
+                if (b) {}
+                while (c) {}
+                do {} while (d);
+                return a;
+                d1: integer = a + 3.5;
+            }
+        

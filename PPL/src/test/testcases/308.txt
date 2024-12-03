@@ -1,0 +1,7 @@
+        // missed closing
+uppercase: function string(c: string) inherit e {
+        OFFSET : integer = 32;
+        if (c >= "a" && c <= "z")
+                return (c) - ((OFFSET));
+        else return c;
+}

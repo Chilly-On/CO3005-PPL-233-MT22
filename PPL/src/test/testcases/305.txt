@@ -1,0 +1,9 @@
+    // declare in if expression
+main : function integer() {
+	str, outstr : string = "timing", strlen(str) + 1;
+	process(str, outstr);
+	print("df\"");
+	if (strstr(szString1, " ") != c && g)
+	print("1");
+	else print("/");
+}

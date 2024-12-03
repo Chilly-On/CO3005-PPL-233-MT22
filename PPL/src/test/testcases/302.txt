@@ -1,0 +1,7 @@
+ // ID start with num ;
+del: function void (out str: string , n: integer) inherit deef{                 // del let.
+        for (n = n, n < (strlen(str) - 1), n + 1)
+                str[n] = str[n + 1];                    // copy af. to bef.
+                str[strlen(score) - 1] = "";                      // last is blank
+        return;
+}

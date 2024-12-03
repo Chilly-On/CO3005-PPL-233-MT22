@@ -1,0 +1,6 @@
+Program([
+	FuncDecl(main, VoidType, [Param(str, StringType), Param(n, IntegerType)], None, BlockStmt([
+		ForStmt(AssignStmt(Id(i), IntegerLit(0)), BinExpr(<, Id(i), FuncCall(strlen, [Id(str)])), BinExpr(+, Id(i), IntegerLit(1)), 
+			BlockStmt([
+			AssignStmt(ArrayCell(outstr, [Id(i)]), ArrayCell(str, [Id(i)]))]))]))
+])

@@ -1,0 +1,10 @@
+
+        f1: function void(out x: string){
+             x = "f1";
+        }
+        main: function void()
+        {
+             y: string = "main";
+             f1(y);
+             printString(y);
+        }

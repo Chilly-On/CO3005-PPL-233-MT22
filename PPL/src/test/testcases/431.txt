@@ -1,0 +1,9 @@
+
+                    f2: function boolean(inherit c: string){}
+                    f1: function boolean() inherit f2{
+                        preventDefault();
+                    }
+                    main: function void() inherit f1{
+                        c: string;              // have c in f2
+                    }
+                    

@@ -1,0 +1,14 @@
+
+        sub: function boolean(){
+            return true;    // this okay
+
+            return "a";
+            while (true)
+            {
+                return "b";
+            }
+        }
+        main: function void(){
+            return;
+        }
+        

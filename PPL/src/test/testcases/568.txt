@@ -1,0 +1,9 @@
+
+        main: function void() {
+            c: integer = 1 + 2;
+            d: float = 1.5 + 2;
+            e: float = 3.7 + 9.1;
+            printInteger(c);
+            printFloat(d);
+            printFloat(e);
+        }

@@ -1,32 +1,41 @@
 # Welcome
+This is the repo of all Principle of Programming Language assignments that I have done in Semester 233 (summer)
+
 ### Install Nodejs
 
+"I think every subjects are difficult, but the subject that haunted students the most in the facility is Principle of Programming Language."
 
-
-This is the repo of all Principle of Programming Language assignments that I have done in Semester 233 (summer)
-All Assignment in PPL are done by K22 studying first time with no copy code, rarely do reference, mostly self-done, and not study Vo Tien
-
+Dr.NDD
 
 ### How to run
-1. Set environment variable ANTLR_JAR to the file antlr-4.9.2-complete.jar in your computer
-Change current directory to initial/src where there is file run.py
-Type: python run.py gen 
-Then type: python run.py test LexerSuite
-Then type: python run.py test ParserSuite
-Then type: python run.py test ASTGenSuite
-Then type: python run.py test CheckerSuite
-Then type: python run.py test CodeGenSuite
+1. (Vietnamese) You can follow my guide to install ANTLR [here](https://docs.google.com/document/d/1ad_hO3TKGJZpuh9yHApAQiyc_knbTUfAhhUeI7FtrcQ/edit?usp=sharinghttps://docs.google.com/document/d/1ad_hO3TKGJZpuh9yHApAQiyc_knbTUfAhhUeI7FtrcQ/edit?usp=sharing)
+
+2. Change current directory to initial/src where there is file run.py
+  ```
+  cd PPL\src
+  ```
+
+3. Then you try the following test
+  ```
+python run.py gen 
+  ```
+4. Now you are ready to try the assignment by using the following command.
+  ```
+
+python run.py gen 
+python run.py test LexerSuite
+python run.py test ParserSuite
+python run.py test ASTGenSuite
+python run.py test CheckerSuite
+python run.py test CodeGenSuite
+  ```
+
+### Features in this demo
+- AST nice print, and in assignment 3 and 4, input is printed in AST (You can look for original code at suites)
+
+- TestUtils display input, expect, and your result for you to easy to compare.
 
 
-
-
-### Trivia
-This is one of the rare semesters that PPL is opened in summer. The earlier is semester 213, which is 3 years before the current.
-
-This is among the subjects that have the worst scoring system. To simplify, you must answer correctly 20% of the questions just to get 0 score. After that, the more correct answer, the more score you can get. This means that if you have a bad score like only 30% of the question, you should only get like 1 point.
-I see some of
-
-The teacher that teaches subject does not actually teach basic knowledge in class; instead you must self-study at home, complete codes at home (like lab), and in-class you have to do quizzes.
 
 
 

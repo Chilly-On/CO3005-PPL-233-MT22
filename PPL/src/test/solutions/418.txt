@@ -1,0 +1,13 @@
+Program([
+	FuncDecl(foo, IntegerType, [Param(a, AutoType)], foo1, BlockStmt([
+		CallStmt(preventDefault, ),
+		IfStmt(BinExpr(<, Id(a), IntegerLit(20)),
+			BlockStmt([
+				VarDecl(x, IntegerType, IntegerLit(5)),
+				ReturnStmt(Id(x))]), ),
+		ReturnStmt(IntegerLit(3))]))
+	FuncDecl(foo1, IntegerType, [InheritParam(x, IntegerType)], None, BlockStmt([
+		CallStmt(preventDefault, )]))
+	FuncDecl(main, VoidType, [], None, BlockStmt([
+		]))
+])

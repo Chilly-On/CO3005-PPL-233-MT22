@@ -1,0 +1,7 @@
+
+                    a: integer;
+                    a: function boolean(){}
+                    main: function void() inherit a{
+
+                    }
+                    

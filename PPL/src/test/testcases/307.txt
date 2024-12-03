@@ -1,0 +1,7 @@
+    // unclosed bracket
+lowercase : function string(c: string) {
+        OFFSET : integer = 32;
+        if (c >= "A" && c <= "Z")
+            {
+            }
+        else {}}

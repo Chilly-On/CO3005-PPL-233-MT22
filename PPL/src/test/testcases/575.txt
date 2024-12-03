@@ -1,0 +1,13 @@
+
+        main: function void() {
+            a, b: integer = 3, 4;
+            swap(a, b);
+            printInteger(a);
+            printInteger(b);
+        }
+        swap: function void(out a: integer, out b: integer)
+        {
+            temp: integer = a;
+            a = b;
+            b = temp;
+        }

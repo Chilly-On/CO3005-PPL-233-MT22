@@ -1,0 +1,16 @@
+
+        foo: function void (out a: integer, out b: integer, c: integer)
+        {
+            b = b + 10;
+            a = a + c + 20;
+            printInteger(a);
+            printInteger(b);
+            printInteger(c);
+        }
+        main: function void()
+        {
+            j, k: boolean = 10, 15;
+            foo(j, j, k);
+            printInteger(j);
+            printInteger(k);
+        }

@@ -1,0 +1,17 @@
+
+        foo: function void (out a: integer)
+        {
+            if (a % 2 == 0)
+            {
+                a = a / 2;
+            }
+            else
+            {
+                a = 3 * a + 1;
+            }
+        }
+        main: function void() {
+            a: integer = 153;
+            foo(a);
+            printInteger(a);
+        }

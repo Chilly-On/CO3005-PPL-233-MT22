@@ -1,0 +1,8 @@
+
+                f1: function void(){
+                    printString("Successfull");
+                }
+                main: function void()
+                {
+                     f1();
+                }

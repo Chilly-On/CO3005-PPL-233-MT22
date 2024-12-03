@@ -1,0 +1,8 @@
+
+        f1: function array [3] of float(){
+
+        }
+        main: function void()
+        {
+             f1();
+        }

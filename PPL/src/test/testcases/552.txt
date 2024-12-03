@@ -1,0 +1,14 @@
+
+        min: function integer (a: integer, b: integer)
+        {
+            if (a < b)
+            {
+                return a;
+            }
+            return b;
+        }
+        main: function void()
+        {
+            a, b, c, d: integer = readInteger(), readInteger(), readInteger(), readInteger(); // Input 3 -1 10 6
+            printInteger(min(min(min(a, b), c), d));
+        }

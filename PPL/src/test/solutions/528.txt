@@ -1,0 +1,14 @@
+Program([
+	VarDecl(x, ArrayType([2], BooleanType), ArrayLit([
+		BooleanLit(False),
+		BooleanLit(False)]))
+	VarDecl(y, ArrayType([2, 2], BooleanType), ArrayLit([
+		Id(x),
+		ArrayLit([
+			BooleanLit(False),
+			BooleanLit(True)])]))
+	FuncDecl(main, VoidType, [], None, BlockStmt([
+		AssignStmt(ArrayCell(x, [IntegerLit(1)]), BooleanLit(True)),
+		CallStmt(printBoolean, ArrayCell(x, [IntegerLit(1)])),
+		CallStmt(printBoolean, ArrayCell(y, [IntegerLit(1), IntegerLit(0)]))]))
+])

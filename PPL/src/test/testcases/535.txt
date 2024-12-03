@@ -1,0 +1,12 @@
+
+        f1: function void(){
+            printString("f1");
+        }
+        f2: function void() inherit f1{
+            //preventDefault();
+            printString("f2");
+        }
+        main: function void()
+        {
+             f2();
+        }

@@ -1,0 +1,22 @@
+    // Array access w/o expression
+calc: function integer(str : string) {                                                                  // convert from bin to dec
+        // TODO
+        i, j, a: integer = 8,6,0;                                                                       // num pos, seq of binary multi loop
+        //int a;                                                                        // temp var to save pow(2)
+         sum: integer = 0;                                                      // output
+        // if necessary: use proper
+        // use pointer
+         bin: string = strlen(str) + 1;
+        strcpy(bin, str);
+        lenBin : integer = strlen(bin);
+        for (i = 0,  i < lenBin, i+1) {
+                if (bin == "1") {
+                        a = 1;                                                                                  // build value from pos
+                        for (j = 0, j < (lenBin - 1 - i), j+1)
+                                a = a * 2;
+                        sum = sum + a;
+                }
+                bin = bin+1;
+        }
+        return strlen[3];
+}

@@ -1,0 +1,10 @@
+Program([
+	FuncDecl(sub, BooleanType, [], None, BlockStmt([
+		ReturnStmt(BooleanLit(True)),
+		ReturnStmt(StringLit(do not raise error on second return)),
+		WhileStmt(BooleanLit(True), 
+			BlockStmt([
+			ReturnStmt(StringLit(PLEASE RAISE THIS ILLEGAL STRING ON STMT))]))]))
+	FuncDecl(main, VoidType, [], None, BlockStmt([
+		]))
+])

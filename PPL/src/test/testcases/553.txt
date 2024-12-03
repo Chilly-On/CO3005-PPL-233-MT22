@@ -1,0 +1,14 @@
+
+        foo: function boolean(a: boolean, b: boolean)
+        {
+            if((a && (!a || b)) && ((a || !b) || b))
+            {
+                return true;
+            }
+            return false;
+        }
+        main: function void()
+        {
+            a, b: boolean = true, true;
+            printBoolean(foo(a, b));
+        }

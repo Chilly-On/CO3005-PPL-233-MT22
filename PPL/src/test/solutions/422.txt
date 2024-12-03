@@ -1,0 +1,5 @@
+Program([
+	FuncDecl(main, VoidType, [], None, BlockStmt([
+		VarDecl(x, AutoType, StringLit(str)),
+		CallStmt(printBoolean, Id(x))]))
+])

@@ -1,0 +1,14 @@
+Program([
+	FuncDecl(main, VoidType, [], None, BlockStmt([
+		VarDecl(x, ArrayType([2, 2], IntegerType), ArrayLit([
+			ArrayLit([
+				IntegerLit(1),
+				IntegerLit(2)]),
+			ArrayLit([
+				IntegerLit(3),
+				IntegerLit(4)])])),
+		VarDecl(y, ArrayType([2, 2], IntegerType)),
+		AssignStmt(Id(y), Id(x)),
+		AssignStmt(ArrayCell(y, [IntegerLit(0), IntegerLit(0)]), IntegerLit(7)),
+		CallStmt(printInteger, ArrayCell(y, [IntegerLit(0), IntegerLit(0)]))]))
+])

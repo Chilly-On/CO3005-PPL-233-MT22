@@ -1,0 +1,16 @@
+
+        main: function void()
+        {
+            arr: array[5] of integer = {-3, 9, 0, 1, 8};
+            i: integer;
+            for (i = 0, i <= 2, 1)
+            {
+                temp: integer = arr[i];
+                arr[i] = arr[4 - i];
+                arr[4 - i] = temp;
+            }
+            for(i = 0, i < 5, 1)
+            {
+                printInteger(arr[i]);
+            }
+        }

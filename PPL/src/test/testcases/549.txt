@@ -1,0 +1,10 @@
+
+        foo: function boolean(a: boolean, b: boolean)
+        {
+            return (a && b) && (a || b);
+        }
+        main: function void()
+        {
+            a, b: boolean = true, false;
+            printBoolean(foo(a, b));
+        }

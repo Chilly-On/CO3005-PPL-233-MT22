@@ -1,0 +1,10 @@
+Program([
+	FuncDecl(f1, IntegerType, [InheritParam(x, FloatType)], None, BlockStmt([
+		ReturnStmt(FloatLit(6.6))]))
+	FuncDecl(main, VoidType, [], None, BlockStmt([
+		VarDecl(x, FloatType, FuncCall(f1, [IntegerLit(4)])),
+		VarDecl(y, FloatType),
+		AssignStmt(Id(y), IntegerLit(7)),
+		CallStmt(printFloat, Id(x)),
+		CallStmt(printFloat, Id(y))]))
+])

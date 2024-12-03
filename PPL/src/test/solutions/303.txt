@@ -1,0 +1,31 @@
+Program([
+	FuncDecl(main, IntegerType, [], None, BlockStmt([
+		VarDecl(char, StringType, StringLit(     doAn VAN   *(()hau       )),
+		VarDecl(i, IntegerType),
+		VarDecl(sp1, BooleanType, BooleanLit(False)),
+		ForStmt(AssignStmt(Id(i), IntegerLit(0)), BinExpr(<, Id(i), FuncCall(strlen, [Id(str)])), BinExpr(+, Id(i), IntegerLit(1)), 
+			BlockStmt([
+			IfStmt(BinExpr(==, ArrayCell(str, [Id(i)]), StringLit( )),
+				IfStmt(BinExpr(==, Id(sp1), BooleanLit(True)),
+					BlockStmt([
+						CallStmt(del, Id(str), Id(i)),
+						AssignStmt(Id(i), BinExpr(-, Id(i), IntegerLit(1)))]), 
+				Else:
+					AssignStmt(Id(sp1), BooleanLit(True))), 
+			Else:
+				AssignStmt(Id(sp1), BooleanLit(False)))])),
+		ForStmt(AssignStmt(Id(i), BinExpr(-, FuncCall(strlen, [Id(str)]), IntegerLit(1))), BinExpr(&&, BinExpr(==, ArrayCell(str, [Id(i)]), StringLit( )), BinExpr(>=, Id(i), IntegerLit(0))), BinExpr(-, Id(i), IntegerLit(1)), 
+			BlockStmt([
+			AssignStmt(ArrayCell(str, [Id(i)]), StringLit())])),
+		ForStmt(AssignStmt(Id(i), IntegerLit(0)), BinExpr(<, Id(i), FuncCall(strlen, [Id(str)])), BinExpr(+, Id(i), IntegerLit(1)), 
+			BlockStmt([
+			AssignStmt(ArrayCell(outstr, [Id(i)]), ArrayCell(str, [Id(i)]))])),
+		ForStmt(AssignStmt(Id(n), Id(n)), BinExpr(<, Id(i), FuncCall(strlen, [Id(outstr)])), BinExpr(+, Id(i), IntegerLit(1)), 
+			BlockStmt([
+			AssignStmt(ArrayCell(outstr, [Id(i)]), StringLit())])),
+		CallStmt(print, Id(outstr), StringLit(.)),
+		DoWhileStmt(BinExpr(==, ArrayCell(str, [IntegerLit(0)]), StringLit( )), 
+			BlockStmt([
+			CallStmt(del, Id(str), IntegerLit(0))])),
+		ReturnStmt(IntegerLit(0))]))
+])

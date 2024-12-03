@@ -1,0 +1,8 @@
+
+        a: integer = readInteger(); // Input 3
+        b: integer = readInteger(); // Input 10
+        c: boolean = (b < 0) && (a * b >= 0);
+        main: function void()
+        {
+            printBoolean(c);
+        }

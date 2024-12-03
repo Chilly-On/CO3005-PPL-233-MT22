@@ -1,0 +1,38 @@
+ // do while w/o blkstmt
+    main: function integer() 
+    {
+            char : string = "     doAn VAN   *(()hau       ";
+            // TODO
+            i : integer;                                                                    // letter str
+            sp1 : boolean = false;                                          // check 1st space
+            // CUT SP HEAD, FIND 1ST LETTER.
+            // CUT >2ND REPEAT SP
+            for (i = 0, i < strlen(str), i + 1) {
+                    if (str[i] == " ")
+                            if (sp1 == true) {
+                                    del(str, i);
+                                    i = i - 1;                                              // auto-move => no plus i
+                            }
+                            else
+                                    sp1 = true;
+                    else
+                            sp1 = false;
+            }
+            // CUT SP TAILS
+            for (i = (strlen(str) - 1), ((str[i] == " ") && (i >= 0)), i - 1) {
+                    str[i] = "";
+            }
+            // TRANSFER TO OUTSTR (this var is harder to code)
+	        for (i = 0, (i < strlen(str)), i + 1) {
+			    outstr[i] = str[i];
+	        }
+            for (n = n, (i < strlen(outstr)), i + 1) {              // set redundant char slots to blank
+                    outstr[i] = "";
+            }
+            // REMOVE BELOW WHEN ENTER CODE, THIS IS RESULT DISP.
+            print(outstr, ".");
+            do {del(str, 0);}
+            while (str[0] == " ");
+            return 0; //REMOVE 0
+    }
+    

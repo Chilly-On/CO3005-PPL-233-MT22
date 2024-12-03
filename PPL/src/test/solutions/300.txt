@@ -1,0 +1,4 @@
+Program([
+	FuncDecl(FUNC, VoidType, [], None, BlockStmt([
+		CallStmt(print, StringLit(WARNING: THIS IS ULTIMATE TESTCASES FOR MT22 IN 233), StringLit(FINISH BASIC TESTCASES BEFORE TRYING THIS.))]))
+])

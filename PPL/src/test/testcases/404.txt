@@ -1,0 +1,12 @@
+
+        sub: function boolean(){
+            return true;    // this okay
+
+            return "do not raise error on second return";
+            while (true)
+            {
+                return "PLEASE RAISE THIS ILLEGAL STRING ON STMT";
+            }
+        }
+        main: function void(){}
+        

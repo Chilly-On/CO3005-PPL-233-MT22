@@ -1,0 +1,11 @@
+Program([
+	FuncDecl(main, IntegerType, [], None, BlockStmt([
+		VarDecl(str, StringType, StringLit(timing)),
+		VarDecl(outstr, StringType, BinExpr(+, FuncCall(strlen, [Id(str)]), IntegerLit(1))),
+		CallStmt(process, Id(str), Id(outstr)),
+		CallStmt(print, StringLit(df\")),
+		IfStmt(BinExpr(!=, FuncCall(strstr, [Id(szString1), StringLit( )]), BinExpr(&&, Id(c), Id(g))),
+			CallStmt(print, StringLit(1)), 
+		Else:
+			CallStmt(print, StringLit(/)))]))
+])

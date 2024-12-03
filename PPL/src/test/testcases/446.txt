@@ -1,0 +1,11 @@
+
+        f2: function integer() inherit f1{
+            preventDefault();
+            p0 = 1.0;                   // p0 from f1
+        }
+        f1: function integer(inherit p0: integer) inherit f0{   // Invalid Parameter: p0
+            preventDefault();
+        }
+        f0: function float(inherit out p0: float){}
+        main: function void(){}
+        

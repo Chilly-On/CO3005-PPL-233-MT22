@@ -1,0 +1,10 @@
+
+                    f2: function boolean(){
+                    }
+                    f1: function boolean() inherit f2{
+                        super();
+                    }
+                    main: function void(){
+                        //arr: array [1,2] of integer = {{1, "1"}};
+                    }
+                    

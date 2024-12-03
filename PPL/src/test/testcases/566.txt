@@ -1,0 +1,5 @@
+
+        a, b, c: string = "Hello", "World", (a :: " ") :: (b :: "!");
+        main: function void() {
+            printString(c);
+        }

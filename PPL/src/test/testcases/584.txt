@@ -1,0 +1,16 @@
+
+        isAmstrong: function boolean (n: integer)
+        {
+            sum, temp: integer = 0, n;
+            while (temp > 0)
+            {
+                digit: integer = temp % 10;
+                sum = sum + digit * digit * digit;
+                temp = temp / 10;
+            }
+            return sum == n;
+        }
+        main: function void() {
+            a: integer = 153;
+            printBoolean(isAmstrong(a));
+        }

@@ -1,0 +1,7 @@
+
+        main: function void(){
+            a,b,c,d: float;
+            x: integer = a + b :: c - d;
+            return;
+        }
+    

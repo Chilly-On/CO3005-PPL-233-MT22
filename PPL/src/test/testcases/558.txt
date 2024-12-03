@@ -1,0 +1,18 @@
+
+        swapNum: function void(out a: integer, out b: integer)
+        {
+            temp: integer = a;
+            a = b;
+            b = temp;
+        }
+        main: function void()
+        {
+            printString("Before swapping:");
+            a, b: integer = 4, 7;
+            printInteger(a);
+            printInteger(b);
+            swapNum(a, b);
+            printString("After swapping:");
+            printInteger(a);
+            printInteger(b);
+        }

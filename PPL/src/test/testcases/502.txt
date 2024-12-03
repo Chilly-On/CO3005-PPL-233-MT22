@@ -1,0 +1,7 @@
+
+        main: function void()
+        {
+            x: integer;
+            x = 3;
+            printInteger(x);
+        }

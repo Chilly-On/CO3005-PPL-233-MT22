@@ -1,0 +1,13 @@
+Program([
+	FuncDecl(process, VoidType, [Param(str, StringType), Param(outstr, StringType)], None, BlockStmt([
+		CallStmt(strcpy, Id(outstr), Id(str)),
+		AssignStmt(Id(outstr), BinExpr(-, BinExpr(+, Id(outstr), FuncCall(strlen, [Id(str)])), IntegerLit(1))),
+		ForStmt(AssignStmt(Id(i), IntegerLit(0)), BinExpr(::, Id(i), Id(strLen)), BinExpr(+, Id(i), IntegerLit(1)), 
+			BlockStmt([
+			AssignStmt(Id(outstr), Id(str)),
+			AssignStmt(Id(str), BinExpr(+, Id(str), IntegerLit(1))),
+			AssignStmt(Id(outstr), BinExpr(-, Id(outstr), IntegerLit(1)))])),
+		IfStmt(FuncCall(bool, []),
+			VarDecl(strLen, IntegerType, ArrayCell(strlen, [IntegerLit(3)])), ),
+		ReturnStmt(StringLit(\n))]))
+])

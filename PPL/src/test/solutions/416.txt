@@ -1,0 +1,10 @@
+Program([
+	FuncDecl(f2, IntegerType, [Param(p1, IntegerType), Param(p2, IntegerType)], f0, BlockStmt([
+		]))
+	FuncDecl(f2, IntegerType, [InheritParam(p1, IntegerType), InheritParam(p2, IntegerType)], f0, BlockStmt([
+		]))
+	FuncDecl(f0, FloatType, [InheritOutParam(p0, IntegerType)], None, BlockStmt([
+		]))
+	FuncDecl(main, VoidType, [], None, BlockStmt([
+		]))
+])

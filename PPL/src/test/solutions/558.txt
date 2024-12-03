@@ -1,0 +1,6 @@
+Before swapping:
+4
+7
+After swapping:
+0
+0

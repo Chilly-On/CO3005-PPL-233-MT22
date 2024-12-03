@@ -1,0 +1,4 @@
+main: function void(){
+                    a: array [1,2] of float = {1, 2.0, 3};
+
+                   }

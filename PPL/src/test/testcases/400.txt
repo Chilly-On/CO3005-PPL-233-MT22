@@ -1,0 +1,8 @@
+
+                    a: function boolean(){}
+                    main: function void() inherit a{
+                        x: integer;
+                        y: auto = 3;
+                        for (x=3, true,x) {z: integer = 3; return;}
+                    }
+                    

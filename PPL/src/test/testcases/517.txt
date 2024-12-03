@@ -1,0 +1,14 @@
+
+            main: function void()
+            {
+                x: integer = 0;
+                y: integer = 4;
+                while (x != y){
+                    if (x == 2){
+                        printString("Successfull");
+                        return;
+                        }
+                    x = x + 1;
+                    }
+                printString("Not successfull");
+            }

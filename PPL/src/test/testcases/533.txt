@@ -1,0 +1,16 @@
+
+        x: integer;
+
+        f1: function void(){
+            x = 1;
+            printInteger(x);
+        }
+        f2: function integer(){
+            x = 2;
+            return x;
+        }
+        main: function void()
+        {
+             f1();
+             printInteger(f2());
+        }

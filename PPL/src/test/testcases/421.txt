@@ -1,0 +1,10 @@
+
+        main: function void()
+        {
+            x: array [3] of integer;
+            y: array [3] of integer;
+            x = {1, 2, 3};
+            x[2] = 7;
+            y = x;
+            printInteger(y[2]);
+        }

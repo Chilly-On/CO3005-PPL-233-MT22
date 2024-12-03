@@ -1,0 +1,8 @@
+
+                main: function void()
+                {
+                    x: float = 5;
+                    printFloat(x);
+                    y: integer = 6.8;
+                    printInteger(y);
+                }

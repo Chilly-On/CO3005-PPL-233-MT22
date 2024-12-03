@@ -1,0 +1,15 @@
+Program([
+	FuncDecl(FUNC, VoidType, [], None, BlockStmt([
+		VarDecl(i, IntegerType),
+		ForStmt(AssignStmt(Id(i), BinExpr(+, Id(x), IntegerLit(2))), BinExpr(<, Id(i), IntegerLit(4)), BinExpr(+, Id(i), IntegerLit(1)), 
+			BlockStmt([
+			IfStmt(BinExpr(==, Id(i), IntegerLit(3)),
+				BlockStmt([
+					AssignStmt(Id(i), BinExpr(+, Id(i), IntegerLit(10)))]), 
+			Else:
+				BlockStmt([
+					IfStmt(BinExpr(==, Id(i), IntegerLit(2)),
+						BlockStmt([
+							AssignStmt(Id(i), BinExpr(+, Id(i), IntegerLit(1)))]), )])),
+			CallStmt(print, StringLit(Made by Chiily On 100%))]))]))
+])

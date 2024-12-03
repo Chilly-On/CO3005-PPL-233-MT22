@@ -1,0 +1,9 @@
+
+        concat: function string (a: string, b: string)
+        {
+            return a :: b;
+        }
+        main: function void() {
+            a, b: string = "Hello ", "World!";
+            printString(concat(a, b));
+        }

@@ -1,0 +1,15 @@
+Program([
+	FuncDecl(main, VoidType, [], None, BlockStmt([
+		VarDecl(x, IntegerType, IntegerLit(0)),
+		VarDecl(y, IntegerType, IntegerLit(0)),
+		DoWhileStmt(BinExpr(<, Id(x), IntegerLit(2)), 
+			BlockStmt([
+			DoWhileStmt(BinExpr(<, Id(y), IntegerLit(2)), 
+				BlockStmt([
+				CallStmt(printInteger, Id(x)),
+				CallStmt(printInteger, Id(y)),
+				AssignStmt(Id(y), BinExpr(+, Id(y), IntegerLit(1)))])),
+			AssignStmt(Id(x), BinExpr(+, Id(x), IntegerLit(1))),
+			AssignStmt(Id(y), IntegerLit(0))])),
+		CallStmt(printString, StringLit(Successfull))]))
+])

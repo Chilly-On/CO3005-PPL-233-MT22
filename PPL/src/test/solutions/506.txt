@@ -1,0 +1,7 @@
+Program([
+	FuncDecl(main, VoidType, [], None, BlockStmt([
+		VarDecl(x, StringType, FuncCall(readString, [])),
+		VarDecl(y, BooleanType, FuncCall(readBoolean, [])),
+		CallStmt(printString, Id(x)),
+		CallStmt(printBoolean, Id(y))]))
+])

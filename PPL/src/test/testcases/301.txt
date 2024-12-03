@@ -1,0 +1,14 @@
+ // 201 unclose string
+FUNC: function void(){
+i : integer;
+for (i = x + 2,i < 4, i + 1){
+    if (i ==3){
+        i = i + 10;     // Made by Chiily On
+    }
+    else {
+        if (i==2){
+            i = i + 1;
+        }
+    }
+    print("Made by Chiily On 100%");
+}}

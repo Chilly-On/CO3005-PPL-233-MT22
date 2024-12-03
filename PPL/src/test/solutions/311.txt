@@ -1,0 +1,20 @@
+Program([
+	FuncDecl(calc, IntegerType, [Param(str, StringType)], None, BlockStmt([
+		VarDecl(i, IntegerType, IntegerLit(8)),
+		VarDecl(j, IntegerType, IntegerLit(6)),
+		VarDecl(a, IntegerType, IntegerLit(0)),
+		VarDecl(sum, IntegerType, IntegerLit(0)),
+		VarDecl(bin, StringType, BinExpr(+, FuncCall(strlen, [Id(str)]), IntegerLit(1))),
+		CallStmt(strcpy, Id(bin), Id(str)),
+		VarDecl(lenBin, IntegerType, FuncCall(strlen, [Id(bin)])),
+		ForStmt(AssignStmt(Id(i), IntegerLit(0)), BinExpr(<, Id(i), Id(lenBin)), BinExpr(+, Id(i), IntegerLit(1)), 
+			BlockStmt([
+			IfStmt(BinExpr(==, Id(bin), StringLit(1)),
+				BlockStmt([
+					AssignStmt(Id(a), IntegerLit(1)),
+					ForStmt(AssignStmt(Id(j), IntegerLit(0)), BinExpr(<, Id(j), BinExpr(-, BinExpr(-, Id(lenBin), IntegerLit(1)), Id(i))), BinExpr(+, Id(j), IntegerLit(1)), 
+						AssignStmt(Id(a), BinExpr(*, Id(a), IntegerLit(2)))),
+					AssignStmt(Id(sum), BinExpr(+, Id(sum), Id(a)))]), ),
+			AssignStmt(Id(bin), BinExpr(+, Id(bin), IntegerLit(1)))])),
+		ReturnStmt(ArrayCell(strlen, [IntegerLit(3)]))]))
+])

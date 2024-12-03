@@ -1,0 +1,9 @@
+
+            main : function void() {}
+            f0 : function auto(x: auto, y: auto, z: auto, t: auto){
+                for (x = 3, y == z, t){}
+                //x = 3;
+                //y, z = true, false;
+
+            }
+        

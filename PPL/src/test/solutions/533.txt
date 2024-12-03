@@ -1,0 +1,12 @@
+Program([
+	VarDecl(x, IntegerType)
+	FuncDecl(f1, VoidType, [], None, BlockStmt([
+		AssignStmt(Id(x), IntegerLit(1)),
+		CallStmt(printInteger, Id(x))]))
+	FuncDecl(f2, IntegerType, [], None, BlockStmt([
+		AssignStmt(Id(x), IntegerLit(2)),
+		ReturnStmt(Id(x))]))
+	FuncDecl(main, VoidType, [], None, BlockStmt([
+		CallStmt(f1, ),
+		CallStmt(printInteger, FuncCall(f2, []))]))
+])

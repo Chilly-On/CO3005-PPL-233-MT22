@@ -1,0 +1,8 @@
+Program([
+	FuncDecl(f1, AutoType, [Param(a, AutoType), Param(b, AutoType)], None, BlockStmt([
+		VarDecl(c, AutoType, BinExpr(==, Id(a), Id(b))),
+		VarDecl(d, AutoType, BinExpr(+, Id(a), Id(b))),
+		ReturnStmt(Id(d))]))
+	FuncDecl(main, VoidType, [], None, BlockStmt([
+		CallStmt(printInteger, FuncCall(f1, [IntegerLit(2), IntegerLit(3)]))]))
+])

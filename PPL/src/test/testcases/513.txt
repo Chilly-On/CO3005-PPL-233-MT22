@@ -1,0 +1,11 @@
+
+            main: function void()
+            {
+                x: integer = 2;
+                y: integer = 4;
+
+                for (x = 0, x < y, 1){
+                    printInteger(x);
+                }
+                printString("Successfull");
+            }

@@ -1,0 +1,9 @@
+    // EXP w/o num
+main: function void(){
+    print(strlen(str));// REMOVE
+
+        // if need, use proper process header
+        // CAL FOR SUM (old)
+                /**/
+    a = a * 2.34e-;
+}

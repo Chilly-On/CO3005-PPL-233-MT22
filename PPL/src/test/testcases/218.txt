@@ -1,0 +1,5 @@
+    // Cannot be Array
+calc: function integer(str : string) {                                                                  // convert from bin to dec
+        // TODO
+        i, j, a: integer = {8,6,0};                                                                       // num pos, seq of binary multi loop
+}

@@ -1,0 +1,8 @@
+
+        main: function void()
+        {
+            x: string = readString();       // input 3d
+            y: boolean = readBoolean();     // input true
+            printString(x);
+            printBoolean(y);
+        }

@@ -1,0 +1,9 @@
+Program([
+	FuncDecl(f1, VoidType, [Param(i, IntegerType), Param(f, FloatType), Param(b, BooleanType), Param(str, StringType)], None, BlockStmt([
+		CallStmt(printInteger, Id(i)),
+		CallStmt(printFloat, Id(f)),
+		CallStmt(printBoolean, Id(b)),
+		CallStmt(printString, Id(str))]))
+	FuncDecl(main, VoidType, [], None, BlockStmt([
+		CallStmt(f1, IntegerLit(3), FloatLit(0.0), BooleanLit(False), StringLit(Successfull))]))
+])

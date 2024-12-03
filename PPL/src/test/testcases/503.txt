@@ -1,0 +1,6 @@
+
+        main: function void()
+        {
+            x: integer = readInteger(); // Input 3
+            printInteger(x);
+        }

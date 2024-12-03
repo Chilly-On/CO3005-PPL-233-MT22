@@ -1,0 +1,23 @@
+
+        findEle: function integer (arr: array[20] of integer, low: integer, high: integer, target: integer)
+        {
+            if (low <= high)
+            {
+                mid: integer = low + (high - low) / 2;
+                if (arr[mid] == target)
+                {
+                    return mid;
+                }
+                if (arr[mid] < target)
+                {
+                    return findEle(arr, mid + 1, high, target);
+                }
+                return findEle(arr, 0, mid - 1, target);
+            }
+            return -1;
+        }
+        main: function void()
+        {
+            arr: array[20] of integer = {-26, -15, -8, -3, 0, 4, 10, 21, 30, 45, 49, 51, 59, 67, 70, 71, 78, 89, 94, 100};
+            printInteger(findEle(arr, 0, 19, 94));
+        }

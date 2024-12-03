@@ -1,0 +1,8 @@
+Program([
+	FuncDecl(uppercase, StringType, [Param(c, StringType)], e, BlockStmt([
+		VarDecl(OFFSET, IntegerType, IntegerLit(32)),
+		IfStmt(BinExpr(<=, BinExpr(>=, Id(c), BinExpr(&&, StringLit(a), Id(c))), StringLit(z)),
+			ReturnStmt(BinExpr(-, Id(c), Id(OFFSET))), 
+		Else:
+			ReturnStmt(Id(c)))]))
+])

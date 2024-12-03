@@ -1,0 +1,10 @@
+
+                    f1: function boolean(a: auto, b: auto){
+                        arr: array [2, 2] of integer = {a, {b, 1}};
+                        printInteger(b);
+                        printInteger(a);
+                    }
+                    main: function void(){
+
+                    }
+                    

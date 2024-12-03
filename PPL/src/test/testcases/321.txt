@@ -1,0 +1,7 @@
+    // Wrong array dimension access
+        main : function void(str : string, n: integer) {			// del let.
+                // TRANSFER TO OUTSTR (this var is harder to code)
+            for (i = 0, (i < strlen(str)), i + 1) {
+                            outstr[i] = str[i];
+            }
+}

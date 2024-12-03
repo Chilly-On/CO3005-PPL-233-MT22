@@ -1,0 +1,8 @@
+
+                    f1: function boolean(){
+                        preventDefault();
+                    }
+                    main: function void() inherit f1{
+                        c: string;              // not have c in f2
+                    }
+                    

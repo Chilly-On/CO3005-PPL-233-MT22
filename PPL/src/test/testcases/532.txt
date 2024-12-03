@@ -1,0 +1,9 @@
+
+                str: string = "Successfull";
+                f1: function void(str: string){
+                    printString(str);
+                }
+                main: function void()
+                {
+                     f1("Successfull");
+                }

@@ -1,0 +1,12 @@
+Program([
+	VarDecl(sp1, BooleanType, BooleanLit(False))
+	FuncDecl(func, IntegerType, [], None, BlockStmt([
+		ForStmt(AssignStmt(Id(i), BinExpr(-, FuncCall(strlen, [Id(str)]), IntegerLit(1))), BinExpr(>=, Id(i), IntegerLit(0)), BinExpr(-, Id(i), IntegerLit(1)), 
+			BlockStmt([
+			IfStmt(BinExpr(==, ArrayCell(str, [Id(i)]), StringLit(1)),
+				BlockStmt([
+					AssignStmt(Id(a), IntegerLit(1)),
+					ForStmt(AssignStmt(Id(j), IntegerLit(0)), BinExpr(<, Id(j), BinExpr(-, BinExpr(-, FuncCall(strlen, [Id(str)]), Id(i)), IntegerLit(1))), BinExpr(+, Id(j), IntegerLit(1)), 
+						AssignStmt(Id(a), BinExpr(*, Id(a), FloatLit(234000000.0)))),
+					AssignStmt(Id(sum), BinExpr(+, Id(sum), Id(a)))]), )]))]))
+])

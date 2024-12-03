@@ -1,0 +1,14 @@
+
+        factorial: function integer(n: integer, m: integer)
+        {
+            res, i: integer = 1, 1;
+            for(i = 1, i <= n, 1)
+            {
+                res = ((res % m) * (i % m)) % m;
+            }
+            return res;
+        }
+        main: function void() {
+            n, m: integer = 100, 1337;
+            printInteger(factorial(n, m));
+        }

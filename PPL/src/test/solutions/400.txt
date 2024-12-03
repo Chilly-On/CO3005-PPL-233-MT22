@@ -1,0 +1,11 @@
+Program([
+	FuncDecl(a, BooleanType, [], None, BlockStmt([
+		]))
+	FuncDecl(main, VoidType, [], a, BlockStmt([
+		VarDecl(x, IntegerType),
+		VarDecl(y, AutoType, IntegerLit(3)),
+		ForStmt(AssignStmt(Id(x), IntegerLit(3)), BooleanLit(True), Id(x), 
+			BlockStmt([
+			VarDecl(z, IntegerType, IntegerLit(3)),
+			ReturnStmt()]))]))
+])

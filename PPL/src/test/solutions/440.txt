@@ -1,0 +1,5 @@
+Illegal array literal: ArrayLit([
+		Id(a),
+		ArrayLit([
+			Id(b),
+			IntegerLit(1)])])

@@ -1,0 +1,17 @@
+     main: function void()
+                        {
+                            x: integer = 0;
+                            y: integer = 0;
+
+                            do {
+                                do {
+                                    printInteger(x);
+                                    printInteger(y);
+                                    y = y + 1;
+                                } while (y < 2);
+                                x = x + 1;
+                                y = 0;
+                            } while (x < 2);
+
+                            printString("Successfull");
+                        }

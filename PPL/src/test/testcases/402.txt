@@ -1,0 +1,18 @@
+a: float = 3.0;
+                    f1: function boolean(x: integer, y: string){
+                        //return false;
+                    }
+                    f2: function integer(y: integer){
+                        while (f1(2.0, "4")) return;
+                        b: auto = 3;
+                        b = true;
+                        y = 3;
+                        for(y = 3, true, !f1()) return;
+                        y = 3;
+                    }
+                    main: function void(){
+                        f1();
+                        y: auto = 3;
+                        for (x=-3, true,f1()) {z: integer = 3; return;}
+                    }
+                    

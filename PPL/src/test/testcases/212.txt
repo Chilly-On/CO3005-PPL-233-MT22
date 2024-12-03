@@ -1,0 +1,5 @@
+    // 3 variables but 2 values
+main:function integer() {
+        i, j, a: integer = 8,6;     
+        print(calc(str));
+}

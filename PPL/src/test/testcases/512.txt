@@ -1,0 +1,10 @@
+
+            main: function void()
+            {
+                x: integer = 2;
+                y: integer = 4;
+
+                do {x = x + 1;}
+                while (x != y);
+                printString("Successfull");
+            }

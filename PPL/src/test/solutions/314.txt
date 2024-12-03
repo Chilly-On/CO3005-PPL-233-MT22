@@ -1,0 +1,6 @@
+Program([
+	VarDecl(sp1, BooleanType, BooleanLit(False))
+	FuncDecl(func, IntegerType, [], None, BlockStmt([
+		CallStmt(print, FuncCall(strlen, [Id(str)])),
+		AssignStmt(Id(a), BinExpr(*, Id(a), FloatLit(0.00234)))]))
+])

@@ -1,0 +1,10 @@
+
+        sub: function boolean(){
+            while (true)
+            {
+                return true;    // this okay
+            }
+            return "PLEASE RAISE THIS ILLEGAL STRING ON STMT";
+        }
+        main: function void(){}
+        

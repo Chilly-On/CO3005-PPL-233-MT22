@@ -1,0 +1,26 @@
+Program([
+	FuncDecl(process, VoidType, [Param(str, StringType), Param(outstr, StringType)], None, BlockStmt([
+		VarDecl(flag, BooleanType, BooleanLit(True)),
+		VarDecl(SPACE, StringType, StringLit( )),
+		VarDecl(DELIM, StringType, StringLit()),
+		WhileStmt(Id(str), 
+			BlockStmt([
+			IfStmt(BinExpr(==, BinExpr(||, FuncCall(isValidChar, [Id(str)]), Id(str)), BinExpr(&&, Id(SPACE), UnExpr(!, Id(flag)))),
+				BlockStmt([
+					AssignStmt(Id(outstr), FuncCall(flag, [FuncCall(uppercase, [Id(str)]), FuncCall(lowercase, [Id(str)])])),
+					AssignStmt(Id(outstr), BinExpr(+, Id(outstr), IntegerLit(1)))]), ),
+			IfStmt(BinExpr(==, Id(str), Id(SPACE)),
+				BlockStmt([
+					AssignStmt(Id(flag), BooleanLit(True))]), 
+			Else:
+				IfStmt(FuncCall(isValidChar, [Id(str)]),
+					BlockStmt([
+						AssignStmt(Id(flag), BooleanLit(False))]), )),
+			AssignStmt(Id(str), BinExpr(+, Id(str), IntegerLit(1)))])),
+		IfStmt(BinExpr(==, BinExpr(-, Id(outstr), IntegerLit(1)), Id(SPACE)),
+			BlockStmt([
+				AssignStmt(Id(DELIM), BinExpr(-, Id(outstr), FloatLit(1.345467556213e+17)))]), 
+		Else:
+			BlockStmt([
+				AssignStmt(Id(outstr), BinExpr(-, Id(DELIM), Id(DELIM)))]))]))
+])

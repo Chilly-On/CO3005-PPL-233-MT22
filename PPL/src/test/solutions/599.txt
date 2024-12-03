@@ -1,0 +1,4 @@
+Program([
+	FuncDecl(main, VoidType, [], None, BlockStmt([
+		CallStmt(printString, StringLit(CHUC MUNG BAN DA HOAN THANH 4 BTL PPL HK233!!!!!))]))
+])

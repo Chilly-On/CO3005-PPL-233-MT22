@@ -1,0 +1,9 @@
+    // Reverse INHERIT and OUT
+    main : function void(out inherit str : string, n: integer) {			// del let.
+	for (n=n, n < (strlen(str) - 1), n+1)
+		str[n] = str[n + 1];			// copy af. to bef.
+	str[strlen(str) - 1] = "";			// last is blank
+	foo(2 + x, 4.0 / y);
+    goo();
+	return;
+}

@@ -1,0 +1,6 @@
+
+                    main: function void(){
+                        x: auto = "str";        // considered x as Boolean
+                        printBoolean(x);
+                    }
+                    

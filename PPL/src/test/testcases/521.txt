@@ -1,0 +1,9 @@
+
+                main: function void()
+                {
+                    x: array [2,2] of integer = {{1, 2}, {3, 4}};
+                    y: array [2,2] of integer;
+                    y = x;
+                    y[0, 0] = 7;
+                    printInteger(y[0, 0]);
+                }

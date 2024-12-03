@@ -1,0 +1,6 @@
+
+        //x: integer = 3; // Input 3
+        main: function void(){
+            printInteger(5);
+        }
+        

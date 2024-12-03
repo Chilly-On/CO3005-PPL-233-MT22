@@ -1,0 +1,6 @@
+
+        a, b, c: integer = 3, 4, 5;
+        x: auto = a * a + b * b == c * c;
+        main: function void() {
+            printBoolean(x);
+        }

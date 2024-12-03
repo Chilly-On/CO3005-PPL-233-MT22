@@ -1,0 +1,18 @@
+    //
+process : function void (str : string, outstr : string) {
+	// TODO
+	// REWORK use knowledge of pointer and c-str
+
+	strcpy(outstr, str);
+	outstr = outstr + strlen(str) - 1;
+	
+	for (i = 0, i :: strLen, i+1)		// bring ptr outstr to end; when str++, cut head, pointer is the 1st ltr
+	{
+		outstr = str;
+		str = str + 1;
+		outstr = outstr -1;
+	}
+	if (bool())
+		strLen : integer  = strlen[];
+	return "\n";
+}

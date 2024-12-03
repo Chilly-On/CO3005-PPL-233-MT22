@@ -1,0 +1,10 @@
+
+        main: function void()
+        {
+            x: integer = 3;
+            y: integer = 3;
+            if (x == y)
+                printBoolean(true);
+            else
+                printBoolean(false);
+        }

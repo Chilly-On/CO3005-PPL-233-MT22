@@ -1,0 +1,9 @@
+
+        main: function void()
+        {
+            a: boolean;         // undecl
+            if (true || a)
+                printString("OR");     // ||
+            else
+                printString("AND");         // &&
+        }

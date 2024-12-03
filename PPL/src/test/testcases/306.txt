@@ -1,0 +1,7 @@
+    // else with no stmt
+// InLab_Q1_CString header
+isValidChar: function boolean (c: string) {
+        if (c >= "a" && c <= "z" || c >= "A" && c <= "Z"){
+                return true;
+                }
+}

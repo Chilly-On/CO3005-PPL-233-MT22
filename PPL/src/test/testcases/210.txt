@@ -1,0 +1,7 @@
+ // return if
+ del: function void(inherit str: string, out n: integer) inherit _Ig4{                  // del let.
+        for (n=n, n < (strlen(str) - 1), n + 1)
+                str[n] = str[n + 1];                    // copy af. to bef.
+        str[strlen(str) - 1] = "";                      // last is blank
+        return if;
+}

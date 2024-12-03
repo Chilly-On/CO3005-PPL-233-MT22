@@ -1,0 +1,18 @@
+
+        powMod: function integer (a: integer, b: integer, m: integer)
+        {
+            if (b == 0)
+            {
+                return 1;
+            }
+            p: integer = ((powMod(a, b / 2, m) % m) * (powMod(a, b / 2, m) % m)) % m;
+            if (b % 2 == 0)
+            {
+                return p;
+            }
+            return (p * (a % m)) % m;
+        }
+        main: function void() {
+            x, y, m: integer = 3, 29, 1337;
+            printInteger(powMod(x, y, m));
+        }

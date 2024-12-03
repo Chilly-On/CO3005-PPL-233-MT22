@@ -1,0 +1,6 @@
+    // Unclosed String with newline
+    main : function integer(inherit out str : string) {
+    s : string = "Truong Dai Hoc
+";
+    cutString(s, 4);
+}

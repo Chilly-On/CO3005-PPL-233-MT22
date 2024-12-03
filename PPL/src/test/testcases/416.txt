@@ -1,0 +1,11 @@
+
+        f2: function integer(p1: integer,  p2: integer) inherit f0{
+            /* check prototype first before checking block stmt
+            you need to create another loops to collect global scope bro =)))*/
+        }
+        f2: function integer(inherit p1: integer, inherit p2: integer) inherit f0{
+            // first loop does not raise any errors
+        }
+        f0: function float(inherit out p0: integer){}
+        main: function void(){}
+        

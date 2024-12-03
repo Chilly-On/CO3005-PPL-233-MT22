@@ -1,0 +1,5 @@
+Program([
+	FuncDecl(proper, VoidType, [Param(str, StringType)], None, BlockStmt([
+		CallStmt(process, Id(str), Id(outstr)),
+		ReturnStmt()]))
+])

@@ -1,0 +1,6 @@
+    // Cannot declare variables in for
+clrRightChar: function void(str : string) {
+	for (i : integer = 3, i < strlen(str), i+1) {		// set redundant char slots to blank
+		stri: string;
+	}
+}

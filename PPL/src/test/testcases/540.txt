@@ -1,0 +1,12 @@
+
+        f1: function integer(inherit x: float){
+             return 6.6;
+        }
+        main: function void()
+        {
+             x: float = f1(4);
+             y: float;
+             y = 7;
+             printFloat(x);
+             printFloat(y);
+        }

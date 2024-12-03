@@ -1,0 +1,41 @@
+
+        sumDigit: function integer(n: integer)
+        {
+            sum: integer = 0;
+            while(n > 0)
+            {
+                sum = sum + (n % 10);
+                n = n / 10;
+            }
+            return sum;
+        }
+        primes: function boolean(n: integer)
+        {
+            i: integer;
+            for(i = 2, i * i <= n, 1)
+            {
+                if (n % i == 0)
+                {
+                    return false;
+                }
+            }
+            return n > 1;
+        }
+        main: function void() {
+            n: integer = readInteger(); // Input 28
+            i: integer;
+            flag: boolean = false;
+            for (i = n, i >= 10, -1)
+            {
+                if (primes(i) && primes(sumDigit(i)))
+                {
+                    printInteger(i);
+                    flag = true;
+                    break;
+                }
+            }
+            if (!flag)
+            {
+                printInteger(0);
+            }
+        }

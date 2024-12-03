@@ -1,0 +1,14 @@
+
+                main: function void()
+                {
+                    x: integer = 2;
+                    y: integer = 4;
+
+                    for (x = 0, x < 2, 1){
+                        for (y = 0, y < 2, 1){
+                            printInteger(x);
+                            printInteger(y);
+                        }
+                    }
+                    printString("Successfull");
+                }

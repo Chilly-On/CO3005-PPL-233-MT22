@@ -1,0 +1,7 @@
+Program([
+	FuncDecl(cutString, VoidType, [Param(s, StringType), Param(index, IntegerType)], None, BlockStmt([
+		IfStmt(BinExpr(<, Id(index), FuncCall(ssize, [])),
+			BlockStmt([
+				AssignStmt(Id(s), FuncCall(ssubstr, [Id(index), BinExpr(-, FuncCall(ssize, []), Id(index))])),
+				CallStmt(print, Id(s))]), )]))
+])
