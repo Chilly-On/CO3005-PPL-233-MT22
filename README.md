@@ -1,7 +1,7 @@
 # fb-crawler
 ### Install Nodejs
 
-All Assignment in PPL are done by K22 studying first time with no copy code, rarely do reference, mostly self-done, and not study Vo Tien.
+aAll Assignment in PPL are done by K22 studying first time with no copy code, rarely do reference, mostly self-done, and not study Vo Tien.
 
 
 1. Check nodejs version
