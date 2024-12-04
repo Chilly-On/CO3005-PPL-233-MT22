@@ -7,7 +7,7 @@ This is the repo of all Principle of Programming Language assignments that I hav
 
 ### Contents
 
-- Slide in semester 233.
+- Unique English slide taught for OISP students in semester 233 created by teacher outside HCMUT.
 - Exercise and lab in semester 233.
 - Assignment code.
 
