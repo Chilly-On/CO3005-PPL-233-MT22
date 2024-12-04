@@ -1,4 +1,1 @@
-Program([
-	FuncDecl(main, VoidType, [], None, BlockStmt([
-		VarDecl(newConversation, IntegerType, FloatLit(3.0))]))
-])
+Type mismatch in Variable Declaration: VarDecl(newConversation, IntegerType, FloatLit(3.0))

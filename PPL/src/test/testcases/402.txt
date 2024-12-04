@@ -3,7 +3,7 @@ a: float = 3.0;
                         //return false;
                     }
                     f2: function integer(y: integer){
-                        while (f1(2.0, "4")) return;
+                        while (f1(2, "4")) return;
                         b: auto = 3;
                         b = true;
                         y = 3;

@@ -1,9 +1,1 @@
-Program([
-	FuncDecl(main, VoidType, [], None, BlockStmt([
-		VarDecl(a, FloatType),
-		VarDecl(b, FloatType),
-		VarDecl(c, FloatType),
-		VarDecl(d, FloatType),
-		VarDecl(x, IntegerType, BinExpr(::, BinExpr(+, Id(a), Id(b)), BinExpr(-, Id(c), Id(d)))),
-		ReturnStmt()]))
-])
+Type mismatch in expression: BinExpr(::, BinExpr(+, Id(a), Id(b)), BinExpr(-, Id(c), Id(d)))

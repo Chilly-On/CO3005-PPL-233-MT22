@@ -1,5 +1,1 @@
-Program([
-	FuncDecl(main, VoidType, [], None, BlockStmt([
-		VarDecl(x, AutoType, StringLit(str)),
-		CallStmt(printBoolean, Id(x))]))
-])
+Type mismatch in statement: CallStmt(printBoolean, Id(x))

@@ -1,10 +1,1 @@
-Program([
-	FuncDecl(sub, BooleanType, [], None, BlockStmt([
-		ReturnStmt(BooleanLit(True)),
-		ReturnStmt(StringLit(a)),
-		WhileStmt(BooleanLit(True), 
-			BlockStmt([
-			ReturnStmt(StringLit(b))]))]))
-	FuncDecl(main, VoidType, [], None, BlockStmt([
-		ReturnStmt()]))
-])
+Type mismatch in statement: ReturnStmt(StringLit(b))

@@ -1,6 +1,1 @@
-Program([
-	FuncDecl(main, VoidType, [], None, BlockStmt([
-		VarDecl(a, ArrayType([5, 5], IntegerType)),
-		VarDecl(b, IntegerType),
-		AssignStmt(Id(b), ArrayCell(a, [FloatLit(1.0), StringLit(1)]))]))
-])
+Type mismatch in expression: ArrayCell(a, [FloatLit(1.0), StringLit(1)])

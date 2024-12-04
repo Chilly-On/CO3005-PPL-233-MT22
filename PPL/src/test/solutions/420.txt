@@ -1,6 +1,0 @@
-Program([
-	FuncDecl(foo, AutoType, [], None, BlockStmt([
-		ReturnStmt(IntegerLit(0))]))
-	FuncDecl(main, VoidType, [], None, BlockStmt([
-		CallStmt(foo, )]))
-])

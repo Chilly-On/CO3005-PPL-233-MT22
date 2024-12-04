@@ -1,15 +1,10 @@
-Program([
-	FuncDecl(main, VoidType, [], None, BlockStmt([
-		VarDecl(arr, ArrayType([3, 2], IntegerType), ArrayLit([
-			ArrayLit([
-				IntegerLit(1),
-				IntegerLit(2)]),
-			ArrayLit([
-				IntegerLit(3),
-				IntegerLit(4)]),
-			ArrayLit([
-				IntegerLit(0),
-				IntegerLit(1)])])),
-		AssignStmt(ArrayCell(arr, [IntegerLit(9), IntegerLit(0)]), FloatLit(4.5)),
-		VarDecl(a, IntegerType, BinExpr(-, ArrayCell(arr, [IntegerLit(1)]), IntegerLit(9)))]))
-])
+Illegal array literal: ArrayLit([
+		ArrayLit([
+			IntegerLit(1),
+			IntegerLit(2)]),
+		ArrayLit([
+			IntegerLit(3),
+			IntegerLit(4)]),
+		ArrayLit([
+			IntegerLit(0),
+			IntegerLit(1)])])

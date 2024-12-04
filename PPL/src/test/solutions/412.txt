@@ -1,5 +1,1 @@
-Program([
-	FuncDecl(x, FloatType, [], None, BlockStmt([
-		VarDecl(x, FloatType, BinExpr(+, FuncCall(x, []), Id(x))),
-		ReturnStmt(Id(x))]))
-])
+Undeclared Identifier: x

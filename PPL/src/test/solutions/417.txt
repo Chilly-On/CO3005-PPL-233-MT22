@@ -1,8 +1,1 @@
-Program([
-	FuncDecl(inc, VoidType, [OutParam(n, IntegerType), Param(a, FloatType)], foo, BlockStmt([
-		]))
-	FuncDecl(foo, AutoType, [InheritParam(n, FloatType), Param(n, IntegerType)], None, BlockStmt([
-		]))
-	FuncDecl(main, VoidType, [], None, BlockStmt([
-		]))
-])
+Invalid Parameter: n

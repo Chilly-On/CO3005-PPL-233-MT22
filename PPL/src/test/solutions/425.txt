@@ -1,9 +1,1 @@
-Program([
-	FuncDecl(main, VoidType, [], foo, BlockStmt([
-		CallStmt(super, FloatLit(1.0), FloatLit(2.0), FloatLit(3.0)),
-		VarDecl(z, IntegerType, BinExpr(+, FuncCall(foo, [IntegerLit(1), IntegerLit(2), IntegerLit(3)]), IntegerLit(1))),
-		AssignStmt(Id(x), StringLit(abc)),
-		AssignStmt(Id(y), BooleanLit(True))]))
-	FuncDecl(foo, AutoType, [InheritParam(x, AutoType), InheritParam(y, AutoType), Param(z, AutoType)], None, BlockStmt([
-		ReturnStmt(BinExpr(+, BinExpr(+, Id(x), Id(y)), Id(z)))]))
-])
+Type mismatch in statement: AssignStmt(Id(x), StringLit(abc))

@@ -1,3 +1,3 @@
 main: function void(){
-                        newConversation: integer = 3.0; // possible in PPL 233
+                        newConversation: integer = 3.0;
                     }

@@ -1,12 +1,1 @@
-Program([
-	FuncDecl(main, VoidType, [], None, BlockStmt([
-		WhileStmt(BooleanLit(True), 
-			BlockStmt([
-			IfStmt(BooleanLit(True),
-				BreakStmt(), ),
-			WhileStmt(BooleanLit(False), 
-				IfStmt(BooleanLit(False),
-				BreakStmt(), )),
-			ContinueStmt()])),
-		ReturnStmt(StringLit(should raise this))]))
-])
+Type mismatch in statement: ReturnStmt(StringLit(should raise this))

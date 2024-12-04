@@ -1,6 +1,6 @@
  main: function void(){
                         arr: array [3,2] of integer = {{1, 2}, {3, 4}, {0,1}};
-                        arr[9, 0] = 4.5;
+                        arr[9, 0] = 4;
                         a: integer = arr[1] - 9;
                     }
                     
